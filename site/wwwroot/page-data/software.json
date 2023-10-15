@@ -1,0 +1,64 @@
+[
+    {
+        "Title": "SGB (SDL2 Graphical Bootstrapper)",
+        "Description": [
+            "An auxiliary C++ library for SDL2 that manages window initialization and screen transitions, with multi-threading for loading assets."
+        ],
+        "Thumbnail": "SDL_logo.png",
+        "URLs": [
+            {
+                "Description": "GitHub page",
+                "URL": "https://github.com/ManoShu/SGB"
+            }
+        ]
+    },
+    {
+        "Title": "MatchRetweeter",
+        "Description": [
+            "A X/Twitter bot made in Python, running on AWS Lambda, DynamoDB and CloudWatch services, with the purpose of sharing online fighting game tournament announcements and registrations.",
+            "Reached 200 followers.",
+            "* Sadly inactive as of May 22, 2023 due to changes in X/Twitter API billing plans."
+        ],
+        "Thumbnail": "MatchRetweeter.png",
+        "URLs": [
+            {
+                "Description": "Twitter/X profile",
+                "URL": "https://x.com/MatchRetweeter"
+            },
+            {
+                "Description": "GitHub page",
+                "URL": "https://github.com/ManoShu/RetweeterBot"
+            }
+        ]
+    },
+    {
+        "Title": "MaSV (MIDI and Soundfont Visualizer)",
+        "Description": [
+            "A study on the MIDI file format, while also remixing sequences using different soundfont (.sf2) files.",
+            "Made in C++ with the SGB library as base.",
+            "The above video uses a soundfont that tries to imitate the YM2608 sound chip found in later PC-9801 computer models."
+        ],
+        "Youtube": "hU8yAH4C0p8?si=B5d4BP7jlXvixKdA",
+        "URLs": [
+          {
+              "Description": "Demonstration video on YouTube",
+              "URL": "https://www.youtube.com/watch?v=hU8yAH4C0p8"
+          }
+        ]
+    },
+    {
+        "Title": "This site",
+        "Description": [
+            "Made with Blazor WebAssembly and hosted in GitHub pages structure.",
+            "It loads those item lists from JSON files while using a component-based building framework.",
+            "The highlighted terms in bold are also loaded from a list."
+        ],
+        "Thumbnail": "you-are-here.png",
+        "URLs": [
+        {
+          "Description" : "You are here icons created by Freepik - Flaticon",
+          "URL" : "https://www.flaticon.com/free-icons/you-are-here"
+          }
+        ]
+    }
+]

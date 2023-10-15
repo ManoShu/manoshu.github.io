@@ -1,0 +1,22 @@
+[
+    {
+        "Title": "Silent Microscope",
+        "Description": [
+            "Made in GameMaker and developed in 48 hours during the Global Game Jam 2020 (the theme for the jam was 'Repair')",
+            "The objective is to fix bad solder joints using a timing mechanic, the player is scored by how much time they took to find and repair all solder points.",
+            "Has keyboard+mouse and controller support, being able to be played with one hand. This was made with player accessibility in mind.",
+            "All own-made assets made during the jam duration."
+        ],
+        "Youtube": "ckAvFOsjZGQ?si=DNwKJXUEHrg7yPJi",
+        "URLs": [
+            {
+                "Description": "Game Jam page",
+                "URL": "https://v3.globalgamejam.org/2020/games/silent-microscope-5"
+            },
+            {
+                "Description": "Demonstration video on YouTube",
+                "URL": "https://www.youtube.com/watch?v=ckAvFOsjZGQ"
+            }
+        ]
+    }
+]

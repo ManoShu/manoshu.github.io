@@ -1,0 +1,116 @@
+@inject HttpClient Http
+
+@if (items == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+  <div class="row">
+  @foreach (var item in items)
+  {
+
+  <div class="col-md-12 col-lg-6">
+         <div class="card">
+              @if(item.Thumbnail != null)
+              {
+                <img src="thumbs/@item.Thumbnail" class="card-img-top" alt="@item.Title">
+              }
+              @if(item.Youtube != null)
+              {
+                <YoutubeEmbed VideoID="@item.Youtube" />
+              }
+             <div class="card-body">
+                 <h5 class="card-title">@item.Title</h5>
+                 <p class="card-text">@BuildItemDescription(item)</p>
+                 <div class="row">
+                   @foreach(var urlItem in GetURLItems(item))
+                   {
+                     <a href="@urlItem.URL" target="_blank" class="btn btn-primary col-xs-12 col-sm-6">@urlItem.Description &nbsp;<span class="oi oi-external-link" aria-hidden="true"></span></a>
+                   }
+                 </div>
+
+             </div>
+         </div>
+     </div>
+     }
+  </div>
+}
+
+@code {
+
+    [Parameter]
+    public string? DataFile {get; set;}
+
+    private string[]? highlights;
+
+    private PageItem[]? items;
+
+    private MarkupString BuildItemDescription(PageItem item)
+    {
+      var result = string.Empty;
+
+      if(item.Description != null)
+      {
+        result = String.Join(
+          "<br /><br />",
+          item.Description.Select(
+            x=> new MarkupString(HighlightText(x))
+            )
+          );
+      }
+
+      return new MarkupString (result);
+    }
+
+    private string HighlightText(string sText)
+    {
+      var result = sText;
+
+      if(highlights != null)
+      {
+        foreach(var sHighlight in highlights)
+        {
+          if(result.Contains(sHighlight))
+          {
+            result = result.Replace(sHighlight, $"<b>{sHighlight}</b>");
+          }
+        }
+      }
+
+      return result;
+    }
+
+    private IEnumerable<URLItem> GetURLItems(PageItem item)
+    {
+        var result = new List<URLItem>();
+
+        if(item.URLs != null)
+        {
+            result.AddRange(item.URLs);
+        }
+
+        return result;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        highlights = await Http.GetFromJsonAsync<string[]>("page-data/highlights.json");
+        items = await Http.GetFromJsonAsync<PageItem[]>(DataFile);
+    }
+
+    public class PageItem
+    {
+        public string? Title { get; set; }
+        public string[]? Description { get; set; }
+        public string? Thumbnail { get; set; }
+        public string? Youtube {get;set;}
+        public URLItem[]? URLs { get; set; }
+    }
+
+    public class URLItem
+    {
+        public string? Description {get;set;}
+        public string? URL {get;set;}
+    }
+}

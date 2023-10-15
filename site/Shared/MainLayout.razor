@@ -6,12 +6,17 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
         <article class="content px-4">
-            @Body
+          <ErrorBoundary>
+            <ChildContent>
+              @Body
+            </ChildContent>
+            <ErrorContent Context="ex">
+            <environment include="Development">
+                Caught an exception from the TriggerError componennt. The exception message is @ex.Message.
+            </environment>
+            </ErrorContent>
+          </ErrorBoundary>
         </article>
     </main>
 </div>
