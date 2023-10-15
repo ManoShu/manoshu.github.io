@@ -1,0 +1,46 @@
+[
+    {
+        "Title": "Slugan (platformer)",
+        "Description": [
+            "Made in Construct. Personal contribution: music and programming.",
+            "One of the best projects of the semester (scored 9 or higher)."
+        ],
+        "Thumbnail": "Slugan1.png",
+        "URLs": [
+            {
+                "Description": "Itch.io page",
+                "URL": "https://sijoga.itch.io/smaug-slugan"
+            }
+        ]
+    },
+    {
+        "Title": "Slugan II (vertical shoot'em up)",
+        "Description": [
+            "Made in Python with pygame, contributed with programming and SFX (using BFXR).",
+            "Used the Tiled file format to build the stages.",
+            "For the 2nd time one of the best projects of the semester"
+        ],
+        "Thumbnail": "Slugan2.png",
+        "URLs": [
+            {
+                "Description": "Itch.io page",
+                "URL": "https://sijoga.itch.io/smaugslugan-ii"
+            }
+        ]
+    },
+    {
+        "Title": "Slugan 3 (endless runner)",
+        "Description": [
+            "Made in Java with libGDX, desktop and Android versions, contribution: music, SFX and programming.",
+            "Once again one of the best projects of the semester.",
+            "Delivered a working mobile version with touch controls"
+        ],
+        "Thumbnail": "Slugan3.png",
+        "URLs": [
+            {
+                "Description": "Itch.io page",
+                "URL": "https://sijoga.itch.io/slugan3"
+            }
+        ]
+    }
+]

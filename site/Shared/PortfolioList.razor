@@ -11,7 +11,7 @@ else
   {
 
   <div class="col-md-12 col-lg-6">
-         <div class="card">
+         <div class="card text-center">
               @if(item.Thumbnail != null)
               {
                 <img src="thumbs/@item.Thumbnail" class="card-img-top" alt="@item.Title">
@@ -23,13 +23,13 @@ else
              <div class="card-body">
                  <h5 class="card-title">@item.Title</h5>
                  <p class="card-text">@BuildItemDescription(item)</p>
-                 <div class="row">
-                   @foreach(var urlItem in GetURLItems(item))
-                   {
-                     <a href="@urlItem.URL" target="_blank" class="btn btn-primary col-xs-12 col-sm-6">@urlItem.Description &nbsp;<span class="oi oi-external-link" aria-hidden="true"></span></a>
-                   }
-                 </div>
-
+                 
+                  @foreach(var urlItem in GetURLItems(item))
+                  {
+                    <div class="card-body">
+                      <a href="@urlItem.URL" target="_blank" class="card-link">@urlItem.Description &nbsp;<span class="oi oi-external-link" aria-hidden="true"></span></a>
+                    </div>
+                  }
              </div>
          </div>
      </div>

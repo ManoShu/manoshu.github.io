@@ -2,4 +2,58 @@
 
 <PageTitle>About Me</PageTitle>
 
-<h3>TODO: A little about me</h3>
+<div class="card text-center">
+    <div class="text-center">
+        <img src="images/profile.jpg" class="text-center" alt="Profile picture" width="150px">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Fernando "ManoShu" Rodrigues</h5>
+        <p class="card-text">@GetDescription()</p>
+        <div class="card-body">
+        @foreach(var urlItem in urls)
+        {            
+            <a href="@urlItem.URL" target="_blank" class="card-link">@urlItem.Description &nbsp;<span class="oi oi-external-link" aria-hidden="true"></span></a>
+        }
+        </div>
+    </div>
+</div>
+
+@code{
+
+    public class URLItem
+    {
+        public string Description {get;set;}
+        public string URL {get;set;}
+
+        public URLItem(string description, string url)
+        {
+            Description = description;
+            URL = url;
+        }
+    }
+
+    private readonly string[] descriptionLines = 
+    {
+        "Dabbled with software coding since I was 12 years old, fiddling with the QBASIC tool that was bundled on the Windows 98 CD.",
+        "Have the equivalent of a Associate Degree of Computing on ETEC Professor Basilides de Godoy.",
+        "Just earned the title of Bachelor of Technology in Digital Games in FATEC Carapicuiba.",
+        "Working with commercial software development for 16+ years"
+    };
+
+    private readonly URLItem[] urls = 
+    {
+        new URLItem("GitHub profile", "https://github.com/ManoShu"),
+        new URLItem("LinkedIn profile", "https://br.linkedin.com/in/fernando-rodrigues-costa"),
+        new URLItem("Twitter/X profile", "https://twitter.com/ManoShu"),
+    };
+
+    private MarkupString GetDescription()
+    {
+        var result = String.Join(
+                "<br />",
+                descriptionLines
+            );
+
+        return new MarkupString (result);
+    }
+}
