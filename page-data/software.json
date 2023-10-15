@@ -40,25 +40,54 @@
         ],
         "Youtube": "hU8yAH4C0p8?si=B5d4BP7jlXvixKdA",
         "URLs": [
-          {
-              "Description": "Demonstration video on YouTube",
-              "URL": "https://www.youtube.com/watch?v=hU8yAH4C0p8"
-          }
+            {
+                "Description": "Demonstration video on YouTube",
+                "URL": "https://www.youtube.com/watch?v=hU8yAH4C0p8"
+            }
+        ]
+    },
+    {
+        "Title": "Python tutorials",
+        "Description": [
+            "As I ended up learning Python before the college semester that required it started, I made the core for the game so early and created several videos to show the other students of the class some of the aspects of Python/pygame:",
+            "* A \"crash course\" on Python itself: https://www.youtube.com/watch?v=ltFlxSUGTzs",
+            "* Showcasing a parameterized gravity implementation: https://www.youtube.com/watch?v=IaX3UlrEb5I",
+            "* Showed how to integrate a GitHub account with PyCharm: https://www.youtube.com/watch?v=hwqInUI9rc8",
+            "* Also demonstrated how to pack the game for distribution: https://www.youtube.com/watch?v=fEg3hAIHaX"
+        ],
+        "Youtube": "IaX3UlrEb5I",
+        "URLs": [
+            {
+                "Description": "Python crash course",
+                "URL": "https://www.youtube.com/watch?v=ltFlxSUGTzs"
+            },
+            {
+                "Description": "Gravity implementation",
+                "URL": "https://www.youtube.com/watch?v=IaX3UlrEb5I"
+            },
+            {
+                "Description": "PyCharm GitHub integration",
+                "URL": "https://www.youtube.com/watch?v=hwqInUI9rc8"
+            },
+            {
+                "Description": "Pygame distribution",
+                "URL": "https://www.youtube.com/watch?v=fEg3hAIHaX"
+            }
         ]
     },
     {
         "Title": "This site",
         "Description": [
             "Made with Blazor WebAssembly and hosted in GitHub pages structure.",
-            "It loads those item lists from JSON files while using a component-based building framework.",
+            "It loads each page item list from a corresponding JSON file while using a component-based building framework.",
             "The highlighted terms in bold are also loaded from a list."
         ],
         "Thumbnail": "you-are-here.png",
         "URLs": [
-        {
-          "Description" : "You are here icons created by Freepik - Flaticon",
-          "URL" : "https://www.flaticon.com/free-icons/you-are-here"
-          }
+            {
+                "Description": "You are here icons created by Freepik - Flaticon",
+                "URL": "https://www.flaticon.com/free-icons/you-are-here"
+            }
         ]
     }
 ]

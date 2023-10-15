@@ -1,3 +1,39 @@
 [
-  
+    {
+        "Title": "ARDConnect",
+        "Description": [
+            "A prototype program to interface a Construct game with Arduino boards using the Firmata protocol."
+        ],
+        "Thumbnail": "ArdConnect.png",
+        "Youtube": "JwErMJyXCD4?si=aAm2E6L3WiqRGf5V",
+        "URLs": [
+            {
+                "Description": "Project GitHub page",
+                "URL": "https://github.com/ManoShu/ARDConnect"
+            },
+            {
+                "Description": "Firmata GitHub page",
+                "URL": "https://github.com/firmata/protocol"
+            },
+            {
+                "Description": "Showcase video",
+                "URL": "https://www.youtube.com/watch?v=JwErMJyXCD4"
+            }
+        ]
+    },
+    {
+        "Title": "BareDev",
+        "Description": [
+            "An open-source, QMK-compatible, ABNT2-based 70% keyboard, focusing in a smaller footprint while retaining all the functions found on a TKL (Del and arrow keys doubling as the navigational cluster).",
+            "Made to fill the gap between a 60%, including the function row, using less horizontal space than a 75%.",
+            "Manufactured and working."
+        ],
+        "Thumbnail": "BareDev.png",
+        "URLs": [
+            {
+                "Description": "Project GitHub page",
+                "URL": "https://github.com/ManoShu/BareDev"
+            }
+        ]
+    }
 ]
