@@ -1,3 +1,7 @@
+/* /Pages/AboutMe.razor.rz.scp.css */
+.content[b-99yknxiiau] {
+    height: 100%;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-xg2j8i9j1j] {
     position: relative;
@@ -10,7 +14,7 @@ main[b-xg2j8i9j1j] {
 }
 
 .sidebar[b-xg2j8i9j1j] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, #333333 0%, #222222 80%);
 }
 
 .top-row[b-xg2j8i9j1j] {
@@ -87,7 +91,7 @@ main[b-xg2j8i9j1j] {
 
 .top-row[b-29rfoo2l4f] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
 }
 
 .navbar-brand[b-29rfoo2l4f] {
