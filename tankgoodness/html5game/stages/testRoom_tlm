@@ -1,0 +1,421 @@
+{
+  "width": 8,
+  "height": 31,
+  "speed": 100,
+  "layers": [
+    {
+      "depth": "low",
+      "texturename": "bkg_stage_testRoom_low",
+      "tilewidth": 4,
+      "tileheight": 8,
+      "tiles": [
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          65,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          72
+        ],
+        [
+          129,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          136
+        ],
+        [
+          129,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          136
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          2,
+          8
+        ],
+        [
+          33,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          40
+        ],
+        [
+          65,
+          130,
+          20,
+          2,
+          4,
+          4,
+          130,
+          72
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          20,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          18,
+          4,
+          2,
+          4,
+          8
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          8
+        ]
+      ],
+      "events": [
+        {
+          "row": 0,
+          "type": "goto",
+          "properties": {
+            "index": "10",
+            "enemy": "obj_dummyBoss"
+          }
+        },
+        {
+          "row": 11,
+          "type": "music",
+          "properties": {
+            "name": "boss_theme"
+          }
+        },
+        {
+          "row": 11,
+          "type": "spawn",
+          "properties": {
+            "type": "obj_dummyBoss",
+            "position": "3",
+            "xoffset": "25",
+            "yoffset": "-25",
+            "extradata": ""
+          }
+        },
+        {
+          "row": 11,
+          "type": "stagespeed",
+          "properties": {
+            "value": "0",
+            "time": "1"
+          }
+        },
+        {
+          "row": 12,
+          "type": "goto",
+          "properties": {
+            "index": "29",
+            "enemy": "obj_dummyEnemy"
+          }
+        },
+        {
+          "row": 15,
+          "type": "spawn",
+          "properties": {
+            "type": "obj_dummyChopper",
+            "position": "0",
+            "xoffset": "25",
+            "yoffset": "-25",
+            "extradata": "1"
+          }
+        },
+        {
+          "row": 15,
+          "type": "spawn",
+          "properties": {
+            "type": "obj_dummyEnemy",
+            "position": "7",
+            "xoffset": "-25",
+            "yoffset": "-25",
+            "extradata": "-1"
+          }
+        },
+        {
+          "row": 20,
+          "type": "spawn",
+          "properties": {
+            "type": "obj_TargetPractice",
+            "position": "0",
+            "xoffset": "0",
+            "yoffset": "0",
+            "extradata": "1"
+          }
+        },
+        {
+          "row": 20,
+          "type": "spawn",
+          "properties": {
+            "type": "obj_FixedTurret",
+            "position": "7",
+            "xoffset": "0",
+            "yoffset": "0",
+            "extradata": "-1"
+          }
+        },
+        {
+          "row": 30,
+          "type": "cutscene",
+          "properties": {
+            "name": "PlayerEnteringStage",
+            "target": "obj_player"
+          }
+        }
+      ]
+    }
+  ]
+}

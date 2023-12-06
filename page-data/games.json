@@ -9,7 +9,13 @@
             "Have plans to remake it on Godot as means of learning and using a more flexible platform."
         ],
         "Thumbnail": "TankGoodness.png",
-        "URLs": []
+        "URLs": [
+            {
+                "Description": "Online demo",
+                "URL": "/tankgoodness/index.html"
+            }
+
+        ]
     },
     {
         "Title": "Silent Microscope",
