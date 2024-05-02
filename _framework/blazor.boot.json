@@ -1,7 +1,7 @@
 {
   "entryAssembly": "site",
   "resources": {
-    "hash": "sha256-0UYgh7QRKUol5avsN4OpWEWGHFZPcXPZfcpleks9aYY=",
+    "hash": "sha256-5g1eh86OIHep9UeLGu+pFYJW5o+7KTAu6sIPqe+a0+0=",
     "runtime": {
       "dotnet.7.0.18.yczjibhkds.js": "sha256-lsqy0PQ8nf1/0sSlLGe3Kfwi8V0Q1QzVy5+AqtJ3cfU=",
       "dotnet.timezones.blat": "sha256-aPcvvHoFVwCzeRxTOvMTcrI2l2HKJO0sjSN7IF10LUQ=",
@@ -25,7 +25,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-eXvGx2jcjpTPEJoAHBsW/VuMPbNyyU+AsuhPmkzSSRY=",
       "Microsoft.JSInterop.dll": "sha256-ItOJwPiiU8GcYyhBlqjO8McWwYOiFPTrl7mawLB4kek=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-Fibw4jtnMD0se9VIfLv5hPcrbAm7ipCW+RN8CfPIDkY=",
-      "site.dll": "sha256-x26q+G09sH1EFWM+ujexNA1kSZ4Pw1LoReBjee1sw1M=",
+      "site.dll": "sha256-QYKLhdV13qPGE7uRMMqS13oayaO9XjSx2+CbhtXIWH4=",
       "System.Collections.Concurrent.dll": "sha256-+FV1VdH/PHKyaCIUF4PReq4xglWeOi0VM1qVGrfBNHI=",
       "System.Collections.dll": "sha256-sN9sa8YEasowj769NUBcSwY/ZG+wjgdK+ZwxHnr7M6c=",
       "System.ComponentModel.dll": "sha256-s62tOgq1vPSY0Mm1P92xKrE9YV4m4qbBORXcaZ9op1M=",
